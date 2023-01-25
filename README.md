@@ -1,6 +1,10 @@
 # dynamic-security.txt
 
-Server-wide dynamically created and signed security.txt using PHP.
+Server-wide dynamically created security.txt and optionally signed with OpenPGP key using PHP.
+
+https://domain.tld/security.txt
+
+https://domain.tld/.well-known/security.txt
 
 For now just for Apache.
 
@@ -16,6 +20,7 @@ For now just for Apache.
 
 - PHP >= 7.4
 - PHP-gnupg extension
+- GnuPG >= 2.0
 
 ## _How To Use_
 
@@ -27,17 +32,27 @@ For now just for Apache.
 
 ### Edit desired fields in /var/www/securitytxt/conf/[config.php](securitytxt/conf/config.php)
 
+### When signing with OpenPGP key
+
+- Create folder /var/www/.gnupg
+
+  ```mkdir /var/www/.gnupg```
+
+- Set folder permissions to Apache user
+
+  ```chown www-data:www-data /var/www/.gnupg```
+
 ### Enable Apache configuration
 
-* Copy /var/www/securitytxt/conf/[apache.conf](securitytxt/conf/apache.conf) to /etc/apache2/conf-available/securitytxt.conf
+- Copy /var/www/securitytxt/conf/[apache.conf](securitytxt/conf/apache.conf) to /etc/apache2/conf-available/securitytxt.conf
 
-* Check PHP handler and change if necessary
+- Check PHP handler and change if necessary
 
-* Enable securitytxt.conf in Apache
+- Enable securitytxt.conf in Apache
 
   ```a2enconf securitytxt```
 
-* Reload Apache
+- Reload Apache
 
   ```systemctl reload apache2```
 
