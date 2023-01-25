@@ -47,7 +47,7 @@ $lang = "en";
 #               $encryption[0] = "https://domain.tld/encryption";
 #               $encryption[1] = "dns:5d2d37ab76d47d36._openpgpkey.domain.tld?type=OPENPGPKEY";
 #
-$encryption[0] = "";
+$encryption = "";
 
 # Signing: A location of the public key to sign security.txt with.
 # If not specified, invalid or empty than security.txt will not be signed.
