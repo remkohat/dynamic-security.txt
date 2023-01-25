@@ -31,6 +31,8 @@ For now just for Apache.
 
 * Copy /var/www/securitytxt/conf/[apache.conf](securitytxt/conf/apache.conf) to /etc/apache2/conf-available/securitytxt.conf
 
+* Check PHP handler and change if necessary
+
 * Enable securitytxt.conf in Apache
 
   ```a2enconf securitytxt```
