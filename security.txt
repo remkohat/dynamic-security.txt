@@ -1,0 +1,45 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+# Canonical URL
+Canonical: https://domain.tld/.well-known/security.txt
+
+# Our security address
+Contact: https://domain.tld/report-vulnerability
+Contact: mailto:security@domain.tld
+
+# Our security policy
+Policy: https://domain.tld/policy
+
+# Hall of fame
+Acknowledgments: https://domain.tld/hall-of-fame
+
+# Jobs for you
+Hiring: https://domain.tld/jobs
+
+# These are the languages we speak
+Preferred-Languages: en
+
+# Our OpenPGP key
+Encryption: https://domain.tld/public.key
+Encryption: openpgp4fpr:BAB0EC5B0A8A52D5F4C9D0E8D5DC1526068283E3
+
+# You shouldn't trust this file, once it has expired (like bad milk)
+Expires: 2025-01-01T00:00:00Z
+
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCgAdFiEEgREAlEyU6YeEspGsbER6wYJfdlUFAmPRjzEACgkQbER6wYJf
+dlWSYw//ZwtgU6P1NywSaWUPhidnqXw1in9iRqCo6YOn+oynDb/J9GLR3mD8zEli
+LXiYk23PVKgwFDyWfDNY65/Bj81t2+9OpAT22rhswm2sL2tHx8uUB4VZM9R9OShO
+SQ8fehKCU9/eTHIVjM/RH/Cn9bcgaZamGKXyPTrMgUnB+koVbRxzOrz7lfmxHgdr
+0vJ2nrgtOMQg+hi/w6nNkkC/XO2yGDe41xoxaAAOlxZGk8guZWk2z8llKzNVLP7/
+3kTlP9NqHFZ7aZa3Z5TUjUzcYIZtNolicpzamaJdAxNfeTlYpZjT8z0Q4KtBLqop
+THDuxA9CAuRTbOYLCBKtcu2wknNX9zGApnqsBdQ1UGzuYvmh2mgGslJNHiYyDCNi
+/8e02oOdrNsMCRoYZR8kpwRMuvIEg/O+yprVKmzqLJrBeH+YPv6NmNNX0spyP7Q8
+IvonbIzh1skWd8U06VKo7+gLhDGBDiRfD6qQ7Cqd0YhSS4k3/Wz8/ohc/JKaGQhP
+BBsCLFPQbOEHpJC+YetXZlw00Wf52vpeRMDked2Y8Pu7c7hz3iubZBNfxGYT/gFU
+hbcDZrexjYPLkJTaQrZ9PKnBwazrSNmRvXNMPZ0OJotdcEqHOUgF7+nMA6/qAbJF
+5YL4NLvINXwqExlx9ZUCd+nj2SNygl+VzX5zVHz4EUteXJheRvo=
+=Dhpc
+-----END PGP SIGNATURE-----
