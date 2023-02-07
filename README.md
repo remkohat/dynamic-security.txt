@@ -13,6 +13,7 @@ For Apache and Nginx.
   - except for **Canonical** which is generated automatically based on visited URL
   - and **Expires** which is generated automatically based on time of visit + 1 year
 - Only configured fields will be shown
+- Only works for websites which use https
 - Output will be signed if a valid key is supplied
 - If a website has a local security.txt file present then the script will not run, so your customers can create their own security.txt file
 
