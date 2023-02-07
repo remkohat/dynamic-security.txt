@@ -55,7 +55,7 @@ For Apache and Nginx.
 
 ### Enable webserver configuration
 
-### - _Apache_
+#### _Apache_
 
 - Copy /var/www/securitytxt/conf/[apache.conf](securitytxt/conf/apache.conf) to /etc/apache2/conf-available/securitytxt.conf
   
@@ -73,7 +73,7 @@ For Apache and Nginx.
 
   ```systemctl reload apache2```
 
-### - _Nginx_
+#### _Nginx_
 
 - Copy /var/www/securitytxt/conf/[nginx.conf](securitytxt/conf/nginx.conf) to /etc/nginx/snippets/securitytxt.conf
   
@@ -95,13 +95,13 @@ For Apache and Nginx.
 
   Resync all websites after.
 
-### - _Apache_
+#### _Apache_
 
   ```RewriteEngine on```
   
   ```RewriteOptions Inherit```
 
-### - _Nginx_
+#### _Nginx_
 
   ```include /etc/nginx/snippets/securitytxt.conf;```
 
