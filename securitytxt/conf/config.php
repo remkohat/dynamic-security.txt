@@ -52,6 +52,7 @@ $encryption = "";
 # Signing: A location of the public key to sign security.txt with.
 # If not specified, invalid or empty than security.txt will not be signed.
 #
+#$privatekeyfile = "";
 $publickeyfile = "";
 
 ?>
