@@ -13,7 +13,6 @@ For Apache and Nginx.
   - except for **Canonical** which is generated automatically based on visited URL
   - and **Expires** which is generated automatically based on time of visit + 1 year
 - Only configured fields will be shown
-- Only works for websites which use https
 - Output will be signed if a valid key is supplied
 - If a website has a local security.txt file present then the script will not run, so your customers can create their own security.txt file
 
@@ -43,15 +42,15 @@ For Apache and Nginx.
 
   ```mkdir /var/www/.gnupg```
 
-- Set folder permissions to Apache user
+- Set folder permissions to webserver user
 
   ```chown www-data:www-data /var/www/.gnupg```
 
-- The first time you not only need the public key but also the private key.
+- The first time the script is run you not only need the public key but also the private key.
   
   Uncomment the relevant lines in /var/www/securitytxt/sign/[sign.php](securitytxt/sign/sign.php) and /var/www/securitytxt/conf/[config.php](securitytxt/conf/config.php).
   
-  After the first successful run they can be commented again.
+  After the first successful run the lines can be commented again or deleted in both files.
 
 ### Enable webserver configuration
 
