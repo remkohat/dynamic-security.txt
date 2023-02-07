@@ -29,7 +29,7 @@ For Apache and Nginx.
 
 - Copy securitytxt folder to /var/www/
 
-  <sup>(for any other location you need to alter apache.conf)</sup>
+  <sup>(for any other location you need to alter apache.conf or nginx.conf)</sup>
 
 ### Edit desired fields in /var/www/securitytxt/conf/[config.php](securitytxt/conf/config.php)
 
@@ -58,6 +58,10 @@ For Apache and Nginx.
 ### - _Apache_
 
 - Copy /var/www/securitytxt/conf/[apache.conf](securitytxt/conf/apache.conf) to /etc/apache2/conf-available/securitytxt.conf
+  
+  Or create a symlink in /etc/apache2/conf-available
+  
+  ```ln -s /var/www/securitytxt/conf/apache.conf securitytxt.conf```
 
 - Check PHP handler and change if necessary
 
@@ -72,6 +76,10 @@ For Apache and Nginx.
 ### - _Nginx_
 
 - Copy /var/www/securitytxt/conf/[nginx.conf](securitytxt/conf/nginx.conf) to /etc/nginx/snippets/securitytxt.conf
+  
+  Or create a symlink in /etc/nginx/snippets
+  
+  ```ln -s /var/www/securitytxt/conf/nginx.conf securitytxt.conf```
 
 - Check PHP handler and change if necessary
 
