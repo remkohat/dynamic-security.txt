@@ -8,6 +8,8 @@ https://domain.tld/.well-known/security.txt
 
 For Apache and Nginx.
 
+<sup>(Based on Ubuntu 22.04 server, but should work on older versions and other distro's too)</sup>
+
 ***Features:***
 - All available fields according to [RFC9116](https://www.rfc-editor.org/rfc/rfc9116) can be configured
   - except for **Canonical** which is generated automatically based on visited URL
