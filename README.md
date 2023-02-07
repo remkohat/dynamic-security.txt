@@ -13,14 +13,14 @@ For Apache and Nginx.
   - except for **Canonical** which is generated automatically based on visited URL
   - and **Expires** which is generated automatically based on time of visit + 1 year
 - Only configured fields will be shown
-- Output will be signed if a valid key is supplied
+- Output will be signed if a valid OpenPGP key is supplied
 - If a website has a local security.txt file present then the script will not run, so your customers can create their own security.txt file
 
 ## _Requirements_
 
 - PHP >= 7.4
-- PHP-gnupg extension
-- GnuPG >= 2.0
+- PHP-gnupg extension (when signing with OpenPGP key)
+- GnuPG >= 2.0 (when signing with OpenPGP key)
 
 ## _How To Use_
 
