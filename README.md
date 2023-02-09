@@ -35,6 +35,8 @@ For Apache and Nginx.
 
 ### Edit desired fields in /var/www/securitytxt/conf/[config.php](securitytxt/conf/config.php)
 
+- Leave empty or comment when the field shouldn't be displayed
+
 - Fields are explained here:
   
   [https://www.rfc-editor.org/rfc/rfc9116#name-field-definitions](https://www.rfc-editor.org/rfc/rfc9116#name-field-definitions)
