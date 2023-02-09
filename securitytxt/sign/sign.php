@@ -8,7 +8,6 @@ if (isset($publickeyfile) && !empty($publickeyfile) && file_exists($publickeyfil
     $publicdata = file_get_contents($publickeyfile);
     #$privatekey = $gpg->import($privatedata);
     $publickey = $gpg->import($publicdata);
-    #$gpg->addsignkey($privatekey['fingerprint']);
     $gpg->addsignkey($publickey['fingerprint']);
     $signed = $gpg->sign($securitytxt);
     $securitytxt = $signed;
