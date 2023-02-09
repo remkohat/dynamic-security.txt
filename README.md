@@ -53,9 +53,9 @@ For Apache and Nginx.
 
 - The first time the script is run you not only need the public key but also the private key.
   
-  Uncomment the relevant lines in /var/www/securitytxt/sign/[sign.php](securitytxt/sign/sign.php) and /var/www/securitytxt/conf/[config.php](securitytxt/conf/config.php).
+  Uncomment lines 7 and 9 in /var/www/securitytxt/sign/[sign.php](securitytxt/sign/sign.php) and line 55 in /var/www/securitytxt/conf/[config.php](securitytxt/conf/config.php).
   
-  After the first successful run the lines can be commented again or deleted in both files.
+  After the first successful run these lines can be commented again or deleted in both files.
 
 ### Enable webserver configuration
 
