@@ -63,9 +63,11 @@ For Apache and Nginx.
 
 - Copy /var/www/securitytxt/conf/[apache.conf](securitytxt/conf/apache.conf) to /etc/apache2/conf-available/securitytxt.conf
   
+  ```cp /var/www/securitytxt/conf/apache.conf /etc/apache2/conf-available/securitytxt.conf```
+
   Or create a symlink in /etc/apache2/conf-available
   
-  ```ln -s /var/www/securitytxt/conf/apache.conf securitytxt.conf```
+  ```ln -s /var/www/securitytxt/conf/apache.conf /etc/apache2/conf-available/securitytxt.conf```
 
 - Check PHP handler and change if necessary
 
@@ -81,9 +83,11 @@ For Apache and Nginx.
 
 - Copy /var/www/securitytxt/conf/[nginx.conf](securitytxt/conf/nginx.conf) to /etc/nginx/snippets/securitytxt.conf
   
+  ```cp /var/www/securitytxt/conf/nginx.conf /etc/nginx/snippets/securitytxt.conf```
+
   Or create a symlink in /etc/nginx/snippets
   
-  ```ln -s /var/www/securitytxt/conf/nginx.conf securitytxt.conf```
+  ```ln -s /var/www/securitytxt/conf/nginx.conf /etc/nginx/snippets/securitytxt.conf```
 
 - Check PHP handler and change if necessary
 
