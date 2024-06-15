@@ -2,7 +2,7 @@
 
 Server-wide dynamically created security.txt and optionally signed with OpenPGP key using PHP.
 
-~~https://domain.tld/security.txt~~
+~~ https://domain.tld/security.txt ~~
 
 https://domain.tld/.well-known/security.txt
 
